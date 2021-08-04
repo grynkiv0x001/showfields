@@ -1,0 +1,30 @@
+.about {
+  background-color: #000;
+  color: #fff;
+
+  &__title {
+    @include title;
+  }
+
+  &__content {
+    &-text {
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+
+      &--desktop {
+        display: none;
+      }
+
+      @include onDesktop {
+        &--desktop {
+          display: block;
+        }
+
+        &--mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}

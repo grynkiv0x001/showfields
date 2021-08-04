@@ -1,0 +1,8 @@
+.recent {
+  margin-top: 40px;
+
+  &__title {
+    @include title;
+    padding: 0 10px;
+  }
+}

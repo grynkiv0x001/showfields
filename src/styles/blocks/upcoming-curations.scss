@@ -1,0 +1,8 @@
+.upcoming-curations {
+  padding-bottom: 30px;
+
+  &__title {
+    @include title;
+    margin-top: 40px;
+  }
+}

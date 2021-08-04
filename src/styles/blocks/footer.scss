@@ -1,0 +1,19 @@
+.footer {
+  background-color: #eee;
+  margin-top: 40px;
+  padding-bottom: 50px;
+
+  &__blocks {
+    padding-top: 50px;
+  }
+
+  @include onDesktop {
+    margin-top: 80px;
+    padding: 30px 30px 50px;
+
+    &__blocks {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

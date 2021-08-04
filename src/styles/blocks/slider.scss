@@ -1,0 +1,43 @@
+.slider {
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 15px;
+
+  &--mobile {
+    display: flex;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &__item {
+    list-style: none;
+    padding: 3px;
+
+    &:first-child &-button {
+      background-color: #000;
+    }
+
+    &-button {
+      background-color: transparent;
+      border: 2px solid #000;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  @include onDesktop {
+    &--desktop {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+}

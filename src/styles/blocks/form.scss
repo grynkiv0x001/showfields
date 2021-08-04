@@ -1,0 +1,39 @@
+.form {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-family: "Trade Gothic";
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    width: 90%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    background-image: url(../images/icons/arrow_next.svg);
+    background-repeat: no-repeat;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+  }
+
+  @include onDesktop {
+    text-align: left;
+
+    &__button {
+      right: 50px;
+    }
+  }
+}

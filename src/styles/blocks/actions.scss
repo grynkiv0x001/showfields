@@ -1,0 +1,27 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0 15px;
+
+  @include onDesktop {
+    justify-content: flex-end;
+  }
+
+  &__menu {
+    width: 24px;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    height: 24px;
+
+    &-item {
+      padding: 5px;
+      width: 24px;
+    }
+  }
+}

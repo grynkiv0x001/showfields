@@ -1,0 +1,18 @@
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 40px;
+  margin-top: 20px;
+
+  &__logo-image {
+    height: 80px;
+    width: 60px;
+  }
+
+  &__logo-text {
+    height: 70px;
+    width: 300px;
+  }
+}

@@ -1,0 +1,30 @@
+.nav {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    &__item {
+      margin-right: 20px;
+      list-style: none;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-link {
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

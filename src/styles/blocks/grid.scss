@@ -1,0 +1,48 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 0;
+
+    &-image {
+      background-image: url(../images/polaroid-bg.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 10px 10px 25px;
+      height: 140px;
+      width: 125px;
+    }
+
+    &-background {
+      display: none;
+    }
+
+    &-name {
+      font-family: "Ogg";
+      font-size: 26px;
+      margin-top: 15px;
+    }
+  }
+
+  @include onDesktop {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__item {
+      margin-top: 50px;
+
+      &-image {
+        height: 205px;
+        width: 185px;
+      }
+
+      &-name {
+        font-size: 40px;
+      }
+    }
+  }
+}
