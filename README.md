@@ -1,1 +1,1 @@
-// TODO: REMOVE EXAMPLE.PDF from repo!
+https://grynkiv0x001.github.io/showfields/
