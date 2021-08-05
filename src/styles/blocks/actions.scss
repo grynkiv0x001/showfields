@@ -5,6 +5,7 @@
 
   @include onDesktop {
     justify-content: flex-end;
+    max-width: 1900px;
   }
 
   &__menu {

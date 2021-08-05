@@ -14,8 +14,8 @@
       background-position: center;
       background-repeat: no-repeat;
       padding: 10px 10px 25px;
-      height: 140px;
-      width: 125px;
+      height: 160px;
+      width: 145px;
     }
 
     &-background {
@@ -23,7 +23,7 @@
     }
 
     &-name {
-      font-family: "Ogg";
+      font-family: "Ogg", Helvetica, sans-serif;
       font-size: 26px;
       margin-top: 15px;
     }
@@ -31,6 +31,8 @@
 
   @include onDesktop {
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1900px;
 
     &__item {
       margin-top: 50px;

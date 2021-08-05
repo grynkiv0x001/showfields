@@ -4,6 +4,10 @@
 
   &__title {
     @include title;
+
+    @include onDesktop {
+      font-size: 60px;
+    }
   }
 
   &__content {
@@ -17,6 +21,9 @@
       }
 
       @include onDesktop {
+        margin: 0 auto;
+        width: 50%;
+
         &--desktop {
           display: block;
         }

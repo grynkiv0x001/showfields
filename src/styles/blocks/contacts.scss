@@ -10,10 +10,6 @@
     list-style: none;
     padding: 10px;
 
-    &-link {
-
-    }
-
     &-icon {
       width: 24px;
     }
@@ -30,6 +26,16 @@
   &--mobile {
     @include onDesktop {
       display: none;
+    }
+  }
+
+  @media (max-width: 1350px) {
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
     }
   }
 }

@@ -87,4 +87,10 @@
       display: block;
     }
   }
+
+  @media (max-width: 1350px) {
+    &--form {
+      width: 380px;
+    }
+  }
 }

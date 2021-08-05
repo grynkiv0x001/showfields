@@ -8,12 +8,15 @@
   }
 
   @include onDesktop {
-    margin-top: 80px;
+    margin: 0 auto;
+    margin-top: 40px;
     padding: 30px 30px 50px;
+    max-width: 1900px;
 
     &__blocks {
       display: flex;
       justify-content: space-around;
+      margin: 0 auto;
     }
   }
 }

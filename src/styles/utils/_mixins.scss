@@ -1,11 +1,11 @@
 @mixin onDesktop {
-  @media (min-width: 1024px) {
+  @media (min-width: 1300px) {
     @content;
   }
 }
 
 @mixin title {
-  font-family: "Ogg";
+  font-family: "Ogg", Helvetica, sans-serif;
   font-size: 36px;
   font-weight: normal;
   margin-bottom: 20px;
